@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грилиш - Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+        
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://static0.givemesportimages.com/wordpress/wp-content/uploads/2024/10/mixcollage-30-oct-2024-08-19-am-3615.jpg') no-repeat center center/cover;
+            opacity: 0.2;
+            z-index: -1;
+            filter: blur(8px);
+        }
+        header {
+            font-size: 2.5em;
+            font-weight: bold;
+            padding: 20px;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0px 0px 15px rgba(255, 75, 43, 0.7);
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 2px;
+        }
+        .social-links {
+            margin: 20px;
+            position: relative;
+            animation: float 3s infinite ease-in-out alternate;
+        }
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(10px);
+            }
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .tiktok {
+            background: #ff0050;
+            box-shadow: 0px 0px 10px rgba(255, 0, 80, 0.8);
+        }
+        .telegram {
+            background: #0088cc;
+            box-shadow: 0px 0px 10px rgba(0, 136, 204, 0.8);
+        }
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на сайт Грилиша</h1>
+    </header>
+    <section class="social-links">
+        <a href="https://www.tiktok.com/@drtankks" class="tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://t.me/drtankss" class="telegram"><i class="fab fa-telegram-plane"></i> Telegram</a>
+    </section>
+</body>
+</html>
